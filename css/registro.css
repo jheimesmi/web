@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/*
+	© GranRol 2013 - Todos los derechos reservados
+		Wildcat - Cristian
+*/
+
+
+@font-face
+{
+	font-family: OpenSans;
+	src: url('../fonts/OpenSans.ttf'),
+		url('../fonts/OpenSans.svg'),
+		url('../fonts/OpenSans.woff'),
+		url('../fonts/OpenSans.eot');
+}
+
+@font-face
+{
+	font-family: CaviarDream;
+	src: url('../fonts/CaviarDreams-webfont.ttf'),
+		url('../fonts/CaviarDreams-webfont.svg'),
+		url('../fonts/CaviarDreams-webfont.woff'),
+		url('../fonts/CaviarDreams-webfont.eot');
+}
+
+@font-face
+{
+	font-family: CaviarDreamBold;
+	src: url('../fonts/Caviar_Dreams_Bold-webfont.ttf'),
+		url('../fonts/Caviar_Dreams_Bold-webfont.svg'),
+		url('../fonts/Caviar_Dreams_Bold-webfont.woff'),
+		url('../fonts/Caviar_Dreams_Bold-webfont.eot');
+}
+
+@font-face
+{
+	font-family: Heydings;
+	src: url('../fonts/heydings.ttf'),
+		url('../fonts/heydings.svg'),
+		url('../fonts/heydings.woff'),
+		url('../fonts/heydings.eot');
+}
+
+
+@font-face
+{
+	font-family: Bebas;
+	src: url('../fonts/bebas.ttf');
+}
+
+html, body
+{
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+header
+{
+	padding: 10px;
+	background: #444;
+	margin: 0px;
+	font-family: OpenSans, arial, helvetica, sans-serif;
+}
+
+.general
+{
+	position: fixed;
+	top: 55px;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 90%;
+	border: solid 1px #0CF;
+	overflow: auto;
+	min-width: 100%;
+	overflow: auto;
+	background-image: url(../imagenes/text3.gif)
+}
+.general > .contenedorinfo
+{
+	position: absolute;
+	margin: 20px auto 0px;
+	top: 0px;
+	width: 70%;
+	left: 20px; 
+	overflow: auto;
+} 
+
+.general > .extra
+{
+	position: static;
+	float: right;
+	margin-right: 3%;
+	width: 200px;
+	height: 90%;
+}
+
+footer
+{
+	margin-top: -3em;
+	padding: 5px;
+	background: #444;
+	margin: 0px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 7%;
+}
+
+.menu
+{
+	float:right;
+	border: solid 1px #000000;
+	margin: 20px auto 0px;
+	margin-right: 10px;
+	width: 160px;
+	background: #fff;
+	padding: 10px 15px 15px;
+	box-shadow: 0 0px 1px rgba(34,25,25,0.4);
+	font-family: 'OpenSans';
+	font-size: 13px;
+}
+
+.menu h3
+{
+	font-family: OpenSans, arial, helvetica, sans-serif;
+	font-size: 20px; 
+	border-bottom: 1px dotted #D7D7D7;
+	margin-bottom: 10px;
+	color: #666;
+	padding-bottom: 8px;
+}
+
+.menu ul a
+{
+	color: #8D8F8F; 
+	font-size: 13px;
+}
+
+.menu ul a:hover
+{
+	color: #2374C3; 
+	text-decoration: none;
+}
+
+.menu ul a.exception
+{
+	color: #2374C3; 
+	text-decoration: none;
+}
+
+.list
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 18px;  
+}
+
+.title
+{
+	margin-left: 20px;
+	color: #6699FF;
+	
+}
+
+.preg
+{
+	font-family: CaviarDreamBold, arial, helvetica, sans-serif;
+	color: #990000;
+	margin: 20px;
+}
+
+.resp
+{
+	margin: 15px;
+	font-family: OpenSans, arial, helvetica, sans-serif;
+}
+
+.text
+{
+	margin: 15px;
+	text-align: justify; 
+ 	white-space: pre-line; 
+}
+
+.textinfo
+{
+	max-height: 400px;
+	overflow: auto;
+	font-family: OpenSans, arial, helvetica, sans-serif;
+	border: solid 1px #000000;
+	border-radius: 5px;
+	background-image: url(../imagenes/text5.gif);
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+.boton
+{
+	font-family: arial, helvetica, sans-serif;
+	position: static; 
+	height: 20px;
+	width: 100px;
+	padding: 5px; 
+	background: #FCFCFC;
+	border: 1px solid #82A5A1;
+	color: #82A5A1;
+	border-radius: 5px;
+	box-shadow: 0 3px 10px -3px #82A5A1,
+							0 1px 1px 0 #82A5A1;
+	cursor: pointer;
+	transition: all 0.2s;
+	text-align: center;
+}
+
+#sigter, #sigtext, #sigreg
+{
+	float: right; 
+	margin-right: 20px;
+}
+
+#atrreg, #atrint
+{
+	float: left;
+	margin-left: 20px;
+} 
+
+#but1
+{
+	float: left;
+	margin-left: 30px;
+}
+
+#but2
+{
+	float: right;
+	margin-right: 30px;
+}
+
+.registro
+{
+	max-height: 400px;
+	overflow: auto;
+	border: solid 1px #000000;
+	border-radius: 5px;
+	background: #EEEEEE;
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+	font-family: arial, helvetica, sans-serif;
+}
+
+.registro h4
+{
+	font-family: CaviarDream, arial, helvetica, sans-serif;
+	color: #007ACC;
+	line-height: 0px;
+	margin-left: 2%; 
+}
+
+form
+{
+	line-height: 0px;
+}
+
+.titler
+{
+	text-align: center;
+	font-family: Bebas, arial, helvetica, sans-serif;
+}
+
+.titler:before
+{
+	font-family: Heydings;
+	content: "A";
+	color: #CC3300;
+	cursor: default;
+}
+
+.infor
+{
+	font-family: CaviarDreamBold, arial, helvetica, sans-serif;
+	text-align: center;
+	color: #007ACC;
+}
+
+.input
+{
+	margin-left: 2%;
+	font-size: 15px;
+	font-family: CaviarDream, arial, helvetica, sans-serif;
+}
+
+#radio1
+{
+	font-family: CaviarDream, arial, helvetica, sans-serif;
+}
+
+.input:focus 
+{  
+	-webkit-box-shadow: 0px 0px 5px #007eff;  
+	-ms-box-shadow: 0px 0px 5px #007eff;
+	-o-box-shadow: 0px 0px 5px #007eff; 
+	box-shadow: 0px 0px 5px #007eff;  
+}  
+
+.but
+{
+	margin-bottom:5%;
+	margin-top:5%;
+	padding: 9px 14px 9px;
+	border-radius: 5px;
+	border-color: #339BB9;
+	background-color: #339BB9;
+	font-family: OpenSans, arial, helvetica, sans-serif;
+}
+
+.warn
+{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    /*position: absolute;*/
+}
+
+/*.warn:before
+{
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}*/
+
+#reginfo
+{
+	text-align: center;
+	margin-left: 300px;
+}
+/*#lcdtm
+{
+	margin-left: 500px;
+}*/
+
+.boton:hover
+{
+	background: #e3f2f2;
+}
+
+.boton:active
+{
+	
+	box-shadow: none;
+	margin-top: 2px;
+}
+
+.copyright
+{
+	margin-left: 20px;
+	font-family: CaviarDream, arial, helvetica, sans-serif;
+}
+
+.text
+{
+	margin-right: 20px;
+}
+
+.texto
+{
+	font-family: OpenSans, arial, helvetica, sans-serif;
+}
+
+.ulh
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.ulh li
+{
+	float: left;
+	margin-right: 10px;
+}
+
+.ulh a
+{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 15px;
+	line-height: 18px; 
+	text-decoration: none;
+	border-radius: 20px;
+	display: block;
+}
+
+.ulh a:hover
+{
+	background: rgba(0,0,0,0.2);
+}
+
+.ulh a:active, .ulh a.active
+{
+	background: rgba(0,0,0,0.3);
+}
+
+.validator
+{
+	float: right;
+	margin-right: 10px;
+ 	margin-top: -2.5em;
+}
+
+#error
+{
+	position: fixed;
+	width: 20%;
+	height: 150px;
+	border: 1px solid #000000;
+	top: 20%;
+	left: 40%;
+	background: #FFFFFA;
+}
+
+#error2
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000000;
+	top: 0%;
+	left: 0%;
+	background: #FFFFFA;
+}
+
+.cierre 
+{
+	height: 10px;
+	/* position: relative; */
+	/* top: 1%; */
+	padding-top: 10px;
+	padding-bottom: 20px; 	
+	/* left: 90%; */
+	background: #3D991F;
+}
+
+/* .msj
+{
+	position: relative;
+	padding: 25px; 
+}
+ */
+#close
+{
+	/* position: relative; */
+	float: right;
+	/* top: -5%; */
+	margin-right: 7px;
+/* 	top: 1%;
+	left: 90%; */
+	border-radius: 2px;
+	background: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-family: CaviarDream, arial, helvetica, sans-serif;
+}
+
+#close:hover
+{
+	background: #B20000;
+	cursor: pointer;
+}
+
+#msjerr
+{
+	float: left;
+	margin-left: 20px;
+	width: 50%;
+	color: #FFFFFF;
+}
+
+#errmsj
+{
+	padding-top: 15px;
+	text-align: center;
+}
