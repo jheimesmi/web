@@ -1,0 +1,6 @@
+mysqli_query($con, $query)
+mysqli_real_escape_string($con, $user);
+mysqli_error($con)
+mysqli_fetch_assoc($que2);
+mysqli_num_rows($que);
+?•?NYA¦»Ä=>+d§{+§+Ä¦@AÄƒÀÀƒee±¯
